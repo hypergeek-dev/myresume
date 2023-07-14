@@ -9,15 +9,13 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato&display=swap" rel="stylesheet">
   <style>
-    * {
-      font-weight: bold;
-    }
 
     body {
       margin: 0;
       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
       background-size: 400% 400%;
       animation: gradient 15s ease infinite;
+      font-weight: bold;
     }
 
     @keyframes gradient {
@@ -75,7 +73,6 @@
 
     hr {
       border: none;
-      height: 20px;
       width: 90%;
       height: 50px;
       margin-top: 0;
@@ -98,103 +95,108 @@
   <header id="header">
     <div id="profile-picture">
       <img src="/assets/graphics/profil.webp" class="img-fluid custom_rounded float-end img-thumbnail"
-        alt="profile-picture">
+        alt="Profile Picture">
     </div>
 
     <h4>Dennis Jensen</h4>
     <p>Junior Full Stack Developer</p>
     <hr>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-primary">
       <div class="container">
+        <!-- Navbar content -->
       </div>
     </nav>
   </header>
-  <div class="col-md-1"></div>
-  <div class="col-md-8">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-8">
 
-    <div class="card">
-      <h4 class="card-header">Technical Skillset</h4>
-      <h5>Technologies</h5>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>Javascript</p>
-      <p>Python</p>
+        <div class="card">
+          <h4 class="card-header">Technical Skillset</h4>
+          <h5>Technologies</h5>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+          <p>Python</p>
 
-      <h5>Frameworks</h5>
-      <p>Bootstrap</p>
+          <h5>Frameworks</h5>
+          <p>Bootstrap</p>
 
-      <h5>Version Control</h5>
-      <p>Git</p>
-      <p>Github</p>
-    </div>
+          <h5>Version Control</h5>
+          <p>Git</p>
+          <p>Github</p>
+        </div>
 
-    <div class="card">
-      <h4 class="card-header">Portfolio Projects</h4>
-      <h5>Mindful-Zensations</h5>
-      <p>Educational website about meditation with a focus on accessibility in color scheme, font, and structure.</p>
-      <p>Technologies used to build: HTML, CSS</p>
-      <a href="https://github.com/hypergeek-dev/Mindful-Zensations/" target="_blank">Link to Github</a>
+        <div class="card">
+          <h4 class="card-header">Portfolio Projects</h4>
+          <h5>Mindful-Zensations</h5>
+          <p>Educational website about meditation with a focus on accessibility in color scheme, font, and structure.</p>
+          <p>Technologies used to build: HTML, CSS</p>
+          <a href="https://github.com/hypergeek-dev/Mindful-Zensations/" target="_blank">Link to Github</a>
 
-      <h5>Speakers Timer</h5>
-      <p>This app is a timer designed to help speakers manage their time during virtual meetings.</p>
-      <p>Technologies used to build: HTML, CSS, JavaScript.</p>
-      <a href="https://github.com/hypergeek-dev/Speakers-timer/" target="_blank">Link to Github</a>
+          <h5>Speakers Timer</h5>
+          <p>This app is a timer designed to help speakers manage their time during virtual meetings.</p>
+          <p>Technologies used to build: HTML, CSS, JavaScript.</p>
+          <a href="https://github.com/hypergeek-dev/Speakers-timer/" target="_blank">Link to Github</a>
 
 
-      <h5>Cipher Forge</h5>
-      <p>A password generator.</p>
-      <p>Technologies used to build: Python</p>
-      <a href="https://github.com/hypergeek-dev/cipher-forge/" target="_blank">Link to Github</a>
-    </div>
+          <h5>Cipher Forge</h5>
+          <p>A password generator.</p>
+          <p>Technologies used to build: Python</p>
+          <a href="https://github.com/hypergeek-dev/cipher-forge/" target="_blank">Link to Github</a>
+        </div>
 
-    <div class="card">
-      <h4 class="card-header">Collaborative Projects</h4>
-      <h5>Hackathon - December Edition - 2022</h5>
-      <p>Jingle Bingle. Christmas card generator. This project has been awarded 1st place.</p>
-      <p>Technologies used to build: HTML, CSS, JS.</p>
-      <a href="https://github.com/hypergeek-dev/DynastyOne/" target="_blank">Link to Github</a>
+        <div class="card">
+          <h4 class="card-header">Collaborative Projects</h4>
+          <h5>Hackathon - December Edition - 2022</h5>
+          <p>Jingle Bingle. Christmas card generator. This project has been awarded 1st place.</p>
+          <p>Technologies used to build: HTML, CSS, JS.</p>
+          <a href="https://github.com/hypergeek-dev/DynastyOne/" target="_blank">Link to Github</a>
 
-      <h5>Hackathon - The Leafblowers</h5>
-      <p>A presentation of an NGO that strives to prevent the results of deforestation.</p>
-      <p>Technologies used to build: HTML, CSS, JS.</p>
-      <a href="https://github.com/hypergeek-dev/The-Woke-Implementation-Association/" target="_blank">Link to
-        Github</a>
-    </div>
+          <h5>Hackathon - The Leafblowers</h5>
+          <p>A presentation of an NGO that strives to prevent the results of deforestation.</p>
+          <p>Technologies used to build: HTML, CSS, JS.</p>
+          <a href="https://github.com/hypergeek-dev/The-Woke-Implementation-Association/" target="_blank">Link to
+            Github</a>
+        </div>
 
-    <div class="card">
-      <h4 class="card-header">Professional Experience</h4>
-      <h5>Preschool Teacher - Asmundtorp Preschool</h5>
-      <p>October 31, 2019 - September 1, 2022</p>
-      <p>Responsibilities:</p>
-      <p>Leading an educational department in a preschool.</p>
+        <div class="card">
+          <h4 class="card-header">Professional Experience</h4>
+          <h5>Preschool Teacher - Asmundtorp Preschool</h5>
+          <p>October 31, 2019 - September 1, 2022</p>
+          <p>Responsibilities:</p>
+          <p>Leading an educational department in a preschool.</p>
 
-      <h5>Preschool Teacher - Landskrona Municipality</h5>
-      <p>February 18, 2018 - October 31, 2019</p>
-      <p>Responsibilities:</p>
-      <p>Managing pedagogical activities.</p>
-      <p>Providing leadership in educational practices.</p>
+          <h5>Preschool Teacher - Landskrona Municipality</h5>
+          <p>February 18, 2018 - October 31, 2019</p>
+          <p>Responsibilities:</p>
+          <p>Managing pedagogical activities.</p>
+          <p>Providing leadership in educational practices.</p>
 
-      <h5>Preschool Teacher - Malmö Municipality</h5>
-      <p>March 1, 2016 - January 5, 2018</p>
-      <p>Responsibilities:</p>
-      <p>Leading pedagogical activities for children aged 3-6 years.</p>
+          <h5>Preschool Teacher - Malmö Municipality</h5>
+          <p>March 1, 2016 - January 5, 2018</p>
+          <p>Responsibilities:</p>
+          <p>Leading pedagogical activities for children aged 3-6 years.</p>
 
-      <h5>Care Assistant</h5>
-      <p>April 11, 2011 - June 15, 2012</p>
-      <p>Responsibilities:</p>
-      <p>Providing support to individuals with developmental disabilities in a creatively focused workshop setting.
-      </p>
-      <p>Organizing and training volunteer teachers to educate families in Mozambique on topics such as hygiene,
-        diseases, sanitation, and AIDS.</p>
-    </div>
+          <h5>Care Assistant</h5>
+          <p>April 11, 2011 - June 15, 2012</p>
+          <p>Responsibilities:</p>
+          <p>Providing support to individuals with developmental disabilities in a creatively focused workshop setting.
+          </p>
+          <p>Organizing and training volunteer teachers to educate families in Mozambique on topics such as hygiene,
+            diseases, sanitation, and AIDS.</p>
+        </div>
 
-    <div class="card">
-      <h4 class="card-header">Education</h4>
-      <h5>Bachelor of Education - Pedagogy</h5>
-      <p>September 2012 - February 2016</p>
+        <div class="card">
+          <h4 class="card-header">Education</h4>
+          <h5>Bachelor of Education - Pedagogy</h5>
+          <p>September 2012 - February 2016</p>
 
-      <h5>High School Diploma - General Education</h5>
-      <p>February 2007 - February 2009</p>
+          <h5>High School Diploma - General Education</h5>
+          <p>February 2007 - February 2009</p>
+        </div>
+      </div>
     </div>
   </div>
 
