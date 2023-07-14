@@ -9,7 +9,6 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato&display=swap" rel="stylesheet">
   <style>
-
     body {
       margin: 0;
       background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -50,7 +49,6 @@
 
     p {
       font-size: calc(var(--conversion-rate) * 1rem);
-      padding-left: 2vw;
     }
 
     p,
@@ -68,7 +66,12 @@
     }
 
     header {
-      padding-left: 5vw;
+      padding-left: 12vw;
+      padding-right: 25vw;
+    }
+
+    #prof-title {
+      padding: 0;
     }
 
     hr {
@@ -78,17 +81,16 @@
       margin-top: 0;
       border-bottom: 1px solid #1f1209;
       box-shadow: 0 20px 20px -20px #333;
-      margin: -50px auto 10px;
     }
 
     .card {
       margin: 2vh 1rem;
     }
 
-    .navbar {
-      padding: 0;
-    }
-  </style>
+    #navbar {
+    background-color: transparent;
+  }
+</style>
 </head>
 
 <body>
@@ -99,20 +101,46 @@
     </div>
 
     <h4>Dennis Jensen</h4>
-    <p>Junior Full Stack Developer</p>
+    <p id="prof-title">Junior Full Stack Developer</p>
     <hr>
-    <nav class="navbar bg-primary">
-      <div class="container">
-        <!-- Navbar content -->
-      </div>
-    </nav>
   </header>
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#technical-skillset">Technical Skillset</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio-projects">Portfolio Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#collaborative-projects">Collaborative Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#professional-experience">Professional Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-8">
 
-        <div class="card">
+        <div class="card" id="technical-skillset">
           <h4 class="card-header">Technical Skillset</h4>
           <h5>Technologies</h5>
           <p>HTML</p>
@@ -128,10 +156,11 @@
           <p>Github</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="portfolio-projects">
           <h4 class="card-header">Portfolio Projects</h4>
           <h5>Mindful-Zensations</h5>
-          <p>Educational website about meditation with a focus on accessibility in color scheme, font, and structure.</p>
+          <p>Educational website about meditation with a focus on accessibility in color scheme, font, and structure.
+          </p>
           <p>Technologies used to build: HTML, CSS</p>
           <a href="https://github.com/hypergeek-dev/Mindful-Zensations/" target="_blank">Link to Github</a>
 
@@ -147,7 +176,7 @@
           <a href="https://github.com/hypergeek-dev/cipher-forge/" target="_blank">Link to Github</a>
         </div>
 
-        <div class="card">
+        <div class="card" id="collaborative-projects">
           <h4 class="card-header">Collaborative Projects</h4>
           <h5>Hackathon - December Edition - 2022</h5>
           <p>Jingle Bingle. Christmas card generator. This project has been awarded 1st place.</p>
@@ -161,7 +190,7 @@
             Github</a>
         </div>
 
-        <div class="card">
+        <div class="card" id="professional-experience">
           <h4 class="card-header">Professional Experience</h4>
           <h5>Preschool Teacher - Asmundtorp Preschool</h5>
           <p>October 31, 2019 - September 1, 2022</p>
@@ -188,7 +217,7 @@
             diseases, sanitation, and AIDS.</p>
         </div>
 
-        <div class="card">
+        <div class="card" id="education">
           <h4 class="card-header">Education</h4>
           <h5>Bachelor of Education - Pedagogy</h5>
           <p>September 2012 - February 2016</p>
