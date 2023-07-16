@@ -48,6 +48,7 @@ h5,
 a {
   font-family: 'Anonymous Pro', monospace;
   padding-left: 2vw;
+  color: #000;
 }
 
 .card-header {
@@ -55,8 +56,6 @@ a {
 }
 
 header a {
-  text-decoration: none;
-  color: #000;
 }
 
 .social-icons{
