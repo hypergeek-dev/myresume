@@ -72,12 +72,9 @@ hr {
 }
 
 .card {
-  margin: 2vh 1rem;
+  margin: 5vh 1rem;
 }
 
 #navbar {
 background-color: transparent;
-}
-.navbar-toggler {
-margin-left: 45vw;
 }
