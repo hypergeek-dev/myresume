@@ -1,87 +1,85 @@
 body {
-    margin: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 7.5s ease infinite;
-    font-weight: bold;
+  margin: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 7.5s ease infinite;
+  font-weight: bold;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-
-    50% {
-      background-position: 100% 50%;
-    }
-
-    100% {
-      background-position: 0% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
 
-  #profile-picture {
-    position: absolute;
-    top: 3vh;
-    right: 3vw;
-    width: 30%;
-    z-index: 1;
+  100% {
+    background-position: 0% 50%;
   }
+}
 
-  .custom_rounded {
-    border-radius: 50%;
-  }
+#profile-picture {
+  position: absolute;
+  top: 3vh;
+  right: 3vw;
+  width: 30%;
+  z-index: 1;
+}
 
-  :root {
-    --conversion-rate: 0.75;
-  }
+.custom_rounded {
+  border-radius: 50%;
+}
 
-  p {
-    font-size: calc(var(--conversion-rate) * 1rem);
-  }
+:root {
+  --conversion-rate: 0.75;
+}
 
-  p,
-  h1,
-  h2,
-  h3,
-  h5,
-  a {
-    font-family: 'Anonymous Pro', monospace;
-    padding-left: 2vw;
-  }
+p {
+  font-size: calc(var(--conversion-rate) * 1rem);
+}
 
-  .card-header {
-    font-family: 'Lato', sans-serif;
-  }
+p,
+h1,
+h2,
+h3,
+h5,
+a {
+  font-family: 'Anonymous Pro', monospace;
+  padding-left: 2vw;
+}
 
-  header,header a{
-align-content: center;
+.card-header {
+  font-family: 'Lato', sans-serif;
+}
+
+header a {
   text-decoration: none;
   color: #000;
+}
 
-  }
+.social-icons{
+  padding-left: 15vw;
+}
 
-  .social-icons{
-    padding-left: 15vw;
-  }
+#prof-title {
+  padding: 0;
+}
 
-  #prof-title {
-    padding: 0;
-  }
+hr {
+  border: none;
+  width: 90%;
+  height: 50px;
+  margin-top: -5vh;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+}
 
-  hr {
-    border: none;
-    width: 90%;
-    height: 50px;
-    margin-top: -5vh;
-    border-bottom: 1px solid #1f1209;
-    box-shadow: 0 20px 20px -20px #333;
-  }
+.card {
+  margin: 2vh 1rem;
+}
 
-  .card {
-    margin: 2vh 1rem;
-  }
-
-  #navbar {
-  background-color: transparent;
+#navbar {
+background-color: transparent;
 }
