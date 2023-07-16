@@ -5,41 +5,42 @@ body {
     animation: gradient 7.5s ease infinite;
     font-weight: bold;
   }
-
+  
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
     }
-
+  
     50% {
       background-position: 100% 50%;
     }
-
+  
     100% {
       background-position: 0% 50%;
     }
   }
-
-  #profile-picture {
+  
+  #profile-picture img {
     position: absolute;
-    top: 3vh;
+    top: 10vh;
     right: 3vw;
     width: 30%;
     z-index: 1;
+    border-radius: 50px;
   }
-
+  
   .custom_rounded {
     border-radius: 50%;
   }
-
+  
   :root {
     --conversion-rate: 0.75;
   }
-
+  
   p {
     font-size: calc(var(--conversion-rate) * 1rem);
   }
-
+  
   p,
   h1,
   h2,
@@ -47,26 +48,26 @@ body {
   h5,
   a {
     font-family: 'Anonymous Pro', monospace;
-    padding-left: 2vw;
+    padding-left: 4vw;
   }
-
+  
   .card-header {
     font-family: 'Lato', sans-serif;
   }
-
+  
   header a {
     text-decoration: none;
     color: #000;
   }
-
+  
   .social-icons{
     padding-left: 15vw;
   }
-
+  
   #prof-title {
     padding: 0;
   }
-
+  
   hr {
     border: none;
     width: 90%;
@@ -75,11 +76,20 @@ body {
     border-bottom: 1px solid #1f1209;
     box-shadow: 0 20px 20px -20px #333;
   }
-
+  
   .card {
     margin: 2vh 1rem;
   }
-
+  
+  .navbar-toggler {
+  margin-left:33vw;
+    }
   #navbar {
   background-color: transparent;
-}
+  }
+  
+  footer {
+    position: fixed;
+    top: 0;
+    padding-left: 84vw;
+  }

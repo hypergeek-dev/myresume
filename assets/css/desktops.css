@@ -20,12 +20,13 @@ body {
   }
 }
 
-#profile-picture {
+#profile-picture img {
   position: absolute;
-  top: 3vh;
+  top: 10vh;
   right: 3vw;
   width: 30%;
   z-index: 1;
+  border-radius: 50px;
 }
 
 .custom_rounded {
@@ -47,8 +48,7 @@ h3,
 h5,
 a {
   font-family: 'Anonymous Pro', monospace;
-  padding-left: 2vw;
-  color: #000;
+  padding-left: 4vw;
 }
 
 .card-header {
@@ -56,6 +56,8 @@ a {
 }
 
 header a {
+  text-decoration: none;
+  color: #000;
 }
 
 .social-icons{
@@ -79,6 +81,15 @@ hr {
   margin: 2vh 1rem;
 }
 
+.navbar-toggler {
+margin-left:33vw;
+  }
 #navbar {
 background-color: transparent;
+}
+
+footer {
+  position: fixed;
+  top: 0;
+  padding-left: 84vw;
 }
