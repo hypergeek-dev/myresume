@@ -82,7 +82,7 @@ hr {
 }
 
 .navbar-toggler {
-margin-left:33vw;
+margin-left:38vw;
   }
 #navbar {
 background-color: transparent;
@@ -91,5 +91,5 @@ background-color: transparent;
 footer {
   position: fixed;
   top: 0;
-  padding-left: 84vw;
+  padding-left: 88vw;
 }

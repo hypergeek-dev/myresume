@@ -26,7 +26,7 @@ body {
   right: 3vw;
   width: 30%;
   z-index: 1;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .custom_rounded {
@@ -34,7 +34,7 @@ body {
 }
 
 :root {
-  --conversion-rate: 0.75;
+  --conversion-rate: 1.25;
 }
 
 p {
@@ -61,7 +61,7 @@ header a {
 }
 
 .social-icons{
-  padding-left: 15vw;
+  padding-left: 2vw;
 }
 
 #prof-title {
@@ -82,7 +82,7 @@ hr {
 }
 
 .navbar-toggler {
-margin-left:33vw;
+margin-left:43vw;
   }
 #navbar {
 background-color: transparent;
@@ -91,5 +91,8 @@ background-color: transparent;
 footer {
   position: fixed;
   top: 0;
-  padding-left: 84vw;
+  padding-left: 88vw;
 }
+
+.icon {
+  font-size: 1.5rem; }
