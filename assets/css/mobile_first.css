@@ -19,12 +19,14 @@ body {
     background-position: 0% 50%;
   }
 }
-
+.social-icons a {
+  text-decoration: none !important;
+}
 #profile-picture img {
   position: absolute;
-  top: 10vh;
-  right: 3vw;
-  width: 30%;
+  top: 8vh;
+  right: 12vw;
+  width: 15vw;
   z-index: 1;
   border-radius: 50%;
 }
@@ -37,10 +39,6 @@ body {
   --conversion-rate: 0.75;
 }
 
-p {
-  font-size: calc(var(--conversion-rate) * 1rem);
-}
-
 p,
 h2,
 h3,
@@ -50,6 +48,7 @@ h5,
 a {
   font-family: 'Anonymous Pro', monospace;
   padding-left: 4vw;
+  font-size: calc(var(--conversion-rate) * 1rem);
 }
 
 h1{
@@ -96,5 +95,5 @@ background-color: transparent;
 footer {
   position: fixed;
   top: 0;
-  padding-left: 88vw;
+  padding-left: 90vw;
 }

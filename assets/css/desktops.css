@@ -7,7 +7,7 @@
 
 
 :root {
-  --conversion-rate: 1.75;
+  --conversion-rate: 1.6;
 }
 
 
@@ -40,11 +40,6 @@ margin-left:33vw;
 margin-left:5vw;
 
 }
-
-footer {
-  padding-left: 92vw;
-}
-
 
 .icon {
   font-size: 2rem; }

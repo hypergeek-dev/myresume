@@ -5,7 +5,7 @@
   }
   
   :root {
-    --conversion-rate: 0.75;
+    --conversion-rate: 1.8;
   }
   
   .social-icons{
@@ -16,7 +16,3 @@
   .navbar-toggler {
   margin-left:33vw;
     }
-
-  footer {
-    padding-left: 84vw;
-  }

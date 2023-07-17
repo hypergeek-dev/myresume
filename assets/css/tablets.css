@@ -1,14 +1,6 @@
 
-
-#profile-picture img {
-  position: absolute;
-  width: 20%;
-
-}
-
-
 :root {
-  --conversion-rate: 1.5;
+  --conversion-rate: 1.4;
 }
 
 .social-icons{
@@ -19,7 +11,3 @@
 .navbar-toggler {
 margin-left:45vw;
   }
-
-footer {
-  padding-left: 90vw;
-}
