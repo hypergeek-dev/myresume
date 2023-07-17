@@ -2,75 +2,24 @@
 
 #profile-picture img {
   position: absolute;
-  top: 10vh;
-  right: 3vw;
   width: 20%;
-  z-index: 1;
-  border-radius: 50%;
+
 }
 
-.custom_rounded {
-  border-radius: 50%;
-}
 
 :root {
   --conversion-rate: 1.5;
-}
-
-p,
-h4 {
-  font-size: calc(var(--conversion-rate) * 1rem);
-}
-
-p,
-h1,
-h2,
-h3,
-h5,
-a {
-  font-family: 'Anonymous Pro', monospace;
-  padding-left: 4vw;
-}
-
-.card-header {
-  font-family: 'Lato', sans-serif;
-}
-
-header a {
-  text-decoration: none;
-  color: #000;
 }
 
 .social-icons{
   padding-left: 2vw;
 }
 
-#prof-title {
-  padding: 0;
-}
-
-hr {
-  border: none;
-  width: 90%;
-  height: 2px;
-  margin-top: -5vh;
-  border-bottom: 1px solid #1f1209;
-  box-shadow: 0 20px 20px -20px #333;
-}
-
-.card {
-  margin: 2vh 1rem;
-}
 
 .navbar-toggler {
 margin-left:45vw;
   }
-#navbar {
-background-color: transparent;
-}
 
 footer {
-  position: fixed;
-  top: 0;
   padding-left: 90vw;
 }

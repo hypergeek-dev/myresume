@@ -1,51 +1,15 @@
 
 
 #profile-picture img {
-  position: absolute;
   top: 6vh;
-  right: 3vw;
   width: 15%;
-  z-index: 1;
 }
 
-.custom_rounded {
-  border-radius: 50%;
-}
 
 :root {
   --conversion-rate: 1.75;
 }
 
-p{
-  font-size: calc(var(--conversion-rate) * 1rem);
-}
-
-p,
-h2,
-h3,
-h4,
-h5,
-#prof-title,
-a {
-  font-family: 'Anonymous Pro', monospace;
-  padding-left: 4vw;
-}
-
-h1{
-            
-  color: #d9d9d9;
-  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-  color: #d9d9d9;
-  font-size: 92px;    
-  }
-.card-header {
-  font-family: 'Lato', sans-serif;
-}
-
-header,a {
-  text-decoration: none;
-  color: #ffffff;
-}
 
 .social-icons{
   padding-left: 5vw;
@@ -65,15 +29,6 @@ header,a {
 
 .nav-item{padding-left:10px;}
 
-hr {
-  border: none;
-  width: 90%;
-  height: 2px;
-  margin-top: -5vh;
-  border-bottom: 1px solid #1f1209;
-  box-shadow: 0 20px 20px -20px #333;
-}
-
 .card {
   margin: 2vh 1rem;
 }
@@ -82,14 +37,11 @@ hr {
 margin-left:33vw;
   }
 #navbar {
-background-color: transparent;
 margin-left:5vw;
 
 }
 
 footer {
-  position: fixed;
-  top: 0;
   padding-left: 92vw;
 }
 

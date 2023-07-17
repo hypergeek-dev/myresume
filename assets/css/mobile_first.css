@@ -26,7 +26,7 @@ body {
   right: 3vw;
   width: 30%;
   z-index: 1;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .custom_rounded {
@@ -42,23 +42,28 @@ p {
 }
 
 p,
-h1,
 h2,
 h3,
+h4,
 h5,
+#prof-title,
 a {
   font-family: 'Anonymous Pro', monospace;
   padding-left: 4vw;
 }
 
+h1{
+            
+  color: #d9d9d9;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+  color: #d9d9d9;
+  font-size: 92px;    
+  }
+
 .card-header {
   font-family: 'Lato', sans-serif;
 }
 
-header a {
-  text-decoration: none;
-  color: #000;
-}
 
 .social-icons{
   padding-left: 15vw;
@@ -71,7 +76,7 @@ header a {
 hr {
   border: none;
   width: 90%;
-  height: 50px;
+  height: 2px;
   margin-top: -5vh;
   border-bottom: 1px solid #1f1209;
   box-shadow: 0 20px 20px -20px #333;
