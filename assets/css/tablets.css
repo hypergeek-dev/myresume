@@ -24,9 +24,9 @@ body {
   position: absolute;
   top: 10vh;
   right: 3vw;
-  width: 30%;
+  width: 20%;
   z-index: 1;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .custom_rounded {
@@ -34,10 +34,11 @@ body {
 }
 
 :root {
-  --conversion-rate: 0.75;
+  --conversion-rate: 1.5;
 }
 
-p {
+p,
+h4 {
   font-size: calc(var(--conversion-rate) * 1rem);
 }
 
@@ -61,7 +62,7 @@ header a {
 }
 
 .social-icons{
-  padding-left: 15vw;
+  padding-left: 2vw;
 }
 
 #prof-title {
@@ -71,7 +72,7 @@ header a {
 hr {
   border: none;
   width: 90%;
-  height: 50px;
+  height: 2px;
   margin-top: -5vh;
   border-bottom: 1px solid #1f1209;
   box-shadow: 0 20px 20px -20px #333;
@@ -82,7 +83,7 @@ hr {
 }
 
 .navbar-toggler {
-margin-left:33vw;
+margin-left:45vw;
   }
 #navbar {
 background-color: transparent;
@@ -91,5 +92,5 @@ background-color: transparent;
 footer {
   position: fixed;
   top: 0;
-  padding-left: 84vw;
+  padding-left: 90vw;
 }
