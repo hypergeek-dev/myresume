@@ -1,24 +1,4 @@
-body {
-  margin: 0;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400%;
-  animation: gradient 7.5s ease infinite;
-  font-weight: bold;
-}
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 #profile-picture img {
   position: absolute;
@@ -26,7 +6,6 @@ body {
   right: 3vw;
   width: 15%;
   z-index: 1;
-  border-radius: 50%;
 }
 
 .custom_rounded {
@@ -42,7 +21,6 @@ p{
 }
 
 p,
-h1,
 h2,
 h3,
 h4,
@@ -53,14 +31,20 @@ a {
   padding-left: 4vw;
 }
 
-
+h1{
+            
+  color: #d9d9d9;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+  color: #d9d9d9;
+  font-size: 92px;    
+  }
 .card-header {
   font-family: 'Lato', sans-serif;
 }
 
-header a {
+header,a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
 .social-icons{
@@ -69,13 +53,12 @@ header a {
 
 .nav-link.btn.btn-primary{
   display: inline-block;
-  background: #f8f9fa;
-  color: #000000;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  opacity: 0.9;
-  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+    text-transform: uppercase;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
