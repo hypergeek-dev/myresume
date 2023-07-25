@@ -1,45 +1,13 @@
 
-
-#profile-picture img {
-  top: 6vh;
-  width: 15%;
-}
-
-
 :root {
   --conversion-rate: 1.6;
 }
 
-
-.social-icons{
-  padding-left: 5vw;
+.social-icons {
+  padding-left: 7vw;
 }
 
-.nav-link.btn.btn-primary{
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-    text-transform: uppercase;
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
-}
-
-.nav-item{padding-left:10px;}
-
-.card {
-  margin: 2vh 1rem;
-}
-
-.navbar-toggler {
-margin-left:33vw;
-  }
-#navbar {
-margin-left:5vw;
+#header>h1 {
+  padding-left: 4vw;
 
 }
-
-.icon {
-  font-size: 2rem; }

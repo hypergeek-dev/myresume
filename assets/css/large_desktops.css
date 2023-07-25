@@ -1,18 +1,13 @@
 
-    
-  .custom_rounded {
-    border-radius: 50%;
-  }
-  
-  :root {
-    --conversion-rate: 1.8;
-  }
-  
-  .social-icons{
-    padding-left: 15vw;
-  }
-  
-  
-  .navbar-toggler {
-  margin-left:33vw;
-    }
+#header>div.container {
+  margin-top: 12vh;
+}
+
+#header>h1 {
+  padding-left: 4vw;
+
+}
+
+#prof-title {
+  padding-left: 8vw;
+}

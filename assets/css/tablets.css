@@ -1,13 +1,45 @@
+h1 {
+  font-size: 4rem;
+  margin-left: 1vw;
+}
 
 :root {
   --conversion-rate: 1.4;
 }
 
-.social-icons{
-  padding-left: 2vw;
+.social-icons {
+  padding-left: 1vw;
 }
 
 
-.navbar-toggler {
-margin-left:45vw;
-  }
+@media (min-width: 992px) {
+
+
+#profile-picture img {
+  top: 3vh;
+  width: 15%;
+}
+
+#header>h1 {
+  margin-left: 3.5vw;
+}
+
+:root {
+  --conversion-rate: 1.6;
+}
+
+
+.social-icons {
+  padding-left: 5vw;
+  margin-top: -2 vh;
+}
+
+
+.card {
+  margin: 2vh 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+}
