@@ -14,6 +14,7 @@
       background-size: 400% 400%;
       animation: gradient 7.5s ease infinite;
     }
+
     @keyframes gradient {
       0% {
         background-position: 0% 50%;
@@ -27,235 +28,262 @@
         background-position: 0% 50%;
       }
 
-
-
     }
 
-    .icon {       color: #ffffff;}
-
-    #home_button{
-      top: 20px; /* Adjust this value to change the distance from the top */
-      margin-left: 95%; /* Adjust this value to change the distance from the right */
+    .header-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
     }
 
-
-    @media (max-width: 992px) {
-      #home_button{
-        display: none;
-      }
-    } 
-
-    #profile-picture>img {
+    .header-content img {
       border-radius: 50%;
-      width: 20vw;
+      width: 22vw;
+      max-width: 235px;
+      margin-bottom: 1rem;
     }
 
-    .name_contact a {
+    .header-content a {
       text-decoration: none !important;
     }
-    @media (min-width: 992px) {
-      #home_button a {
-        font-size:200%;
+
+    .icon {
+      color: #ffffff;
+    }
+
+    #home_button a {
+      position: fixed;
+      top: 20px;
+      margin-left: 95%;
+    }
+
+    @media (min-width: 768px) {
+      #profile-picture>img {
+        position: absolute;
+        border-radius: 50%;
+        width: 24vw;
+        margin-left: 5vw;
+        margin-top: 1vh;
       }
     }
 
+    @media (min-width: 992px) {
+      .icon {
+        font-size: 200%;
+      }
+
+      h1 {
+        font-size: 400%;
+      }
+
+      #navbar {
+        background: rgba(255, 255, 255, 0.42);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+    }
   </style>
 </head>
 
 <body>
   <header>
-  <div class="container">
-    <div class="name_contact col-8 vstack ml-2 mx-auto d-flex align-items-center">
-      <h1 class="text-center">Dennis Jensen</h1>
-      <p class="text-center">Junior Full Stack Developer</p>
-      <div class="column p-3">
+    <div class="header-content">
+      <img src="assets/graphics/profil.webp" alt="Profile Picture">
+      <h1>Dennis Jensen</h1>
+      <p>Junior Full Stack Developer</p>
+      <div class="name-contact">
         <a href="https://github.com/hypergeek-dev" target="_blank">
-          <i class="icon fab fa-github p-1"></i>
+          <i class="icon fab fa-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/dennis-m-jensen/" target="_blank">
-          <i class="icon fab fa-linkedin p-1"></i>
+          <i class="icon fab fa-linkedin"></i>
         </a>
         <a href="mailto:dennis.mariegaard.jensen@gmail.com">
-          <i class="icon fas fa-envelope p-1"></i>
+          <i class="icon fas fa-envelope"></i>
         </a>
-        <div id="home_button" class="fixed-top">  <a href="https://www.hypergeek.dev" target="_blank">
-          <i class="icon fas fa-home"></i>
-        </a></div>
       </div>
+    </div>
+    <div id="home_button">
+      <a href="https://www.hypergeek.dev" target="_blank">
+        <i class="icon fas fa-home"></i>
+      </a>
     </div>
   </header>
 
-    <section id="align_changer" class="vstack gap-3">
-      <nav id="navbar" class="navbar navbar-expand-lg">
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center flex-column">
-        <li class="nav-item">
-          <a class="nav-link btn btn-primary" href="#executive-summary">Executive Summary</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-primary" href="#technical-skillset">Skillset</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-primary" href="#portfolio-projects">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-primary" href="#collaborative-projects">Collaborative</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-primary" href="#professional-experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-primary" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-primary" href="#additional-information">Additional info</a>
-        </li>
-      </ul>
+  <section id="align_changer" class="vstack gap-3">
+    <nav id="navbar" class="navbar mt-3 navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center flex-column">
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#executive-summary">Executive Summary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#technical-skillset">Skillset</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#portfolio-projects">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#collaborative-projects">Collaborative</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#professional-experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#additional-information">Additional info</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="card-container" class="container column col-10 justify-content-center mx-auto">
+      <div class="card mb-3 p-2" id="executive-summary">
+        <h2 class="card-header">Executive Summary</h2>
+        <p>Dedicated and highly motivated Junior Full stack Developer. <br><br>From postgraduate in Pedagogics,<br> with
+          a passion for IT and a strong desire to transition into a software development
+          career.
+          <br><br>Seeking a challenging position as a Full Stack Developer where I can leverage my educational
+          background,
+          teamwork skills, and problem-solving abilities to deliver innovative solutions to customers.
+        </p>
+
+      </div>
+      <div class="card mb-3 p-2" id="technical-skillset">
+        <h2 class="card-header">Technical Skillset</h2>
+        <h3>Technologies</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Javascript</p>
+        <p>Python</p>
+        <br>
+        <h3>Frameworks</h3>
+        <p>Bootstrap</p>
+        <br>
+        <h3>Version Control</h3>
+        <p>Git</p>
+        <p>Github</p>
+      </div>
+
+      <div class="card mb-3 p-2" id="portfolio-projects">
+        <h2 class="card-header">Portfolio Projects</h2>
+        <h3>Mindful-Zensations</h3>
+        <p>Educational website about meditation with a focus on accessibility in color scheme, font, and structure.
+        </p>
+        <p>Technologies used to build: HTML, CSS</p>
+        <a href="https://github.com/hypergeek-dev/Mindful-Zensations/" target="_blank">Link to Github</a>
+        <br>
+        <h3>Speakers Timer</h3>
+        <p>This app is a timer designed to help speakers manage their time during virtual meetings.</p>
+        <p>Technologies used to build: HTML, CSS, JavaScript.</p>
+        <a href="https://github.com/hypergeek-dev/Speakers-timer/" target="_blank">Link to Github</a>
+        <br>
+
+        <h3>Cipher Forge</h3>
+        <p>A password generator.</p>
+        <p>Technologies used to build: Python</p>
+        <a href="https://github.com/hypergeek-dev/cipher-forge/" target="_blank">Link to Github</a>
+      </div>
+
+      <div class="card mb-3 p-2" id="collaborative-projects">
+        <h2 class="card-header">Collaborative Projects</h2>
+        <h3>Hackathon - December Edition - 2022</h3>
+        <p>Jingle Bingle. Christmas card generator. This project has been awarded 1st place.</p>
+        <p>Technologies used to build: HTML, CSS, JS.</p>
+        <a href="https://github.com/hypergeek-dev/DynastyOne/" target="_blank">Link to Github</a>
+        <br>
+        <h3>Hackathon - The Leafblowers</h3>
+        <p>A presentation of an NGO that strives to prevent the results of deforestation.</p>
+        <p>Technologies used to build: HTML, CSS, JS.</p>
+        <a href="https://github.com/hypergeek-dev/The-Woke-Implementation-Association/" target="_blank">Link to
+          Github</a>
+      </div>
+
+      <div class="card mb-3 p-2" id="professional-experience">
+        <h2 class="card-header">Professional Experience</h2>
+        <h3>Preschool Teacher - Asmundtorp Preschool</h3>
+        <p>October 31, 2019 - September 1, 2022</p>
+        <p>Responsibilities:</p>
+        <p>Curriculum Implementation: Plan and conduct age-appropriate educational activities following the Swedish
+          preschool curriculum to foster children's holistic development.</p>
+        <p>Child Development Assessment: Observe and assess children's progress to tailor learning approaches,
+          collaborating with parents and colleagues for individual development plans.</p>
+        <p>Educational Leadership: Lead the preschool's educational team, fostering a positive and inclusive
+          learning
+          environment, and encouraging professional growth among staff.</p>
+        <br>
+        <h3>Preschool Teacher - Landskrona Municipality</h3>
+        <p>February 18, 2018 - October 31, 2019</p>
+        <p>Responsibilities:</p>
+        <p>Curriculum Implementation: Plan and conduct age-appropriate educational activities following the Swedish
+          preschool curriculum to foster children's holistic development.</p>
+        <p>Child Development Assessment: Observe and assess children's progress to tailor learning approaches,
+          collaborating with parents and colleagues for individual development plans.</p>
+        <p>Educational Leadership: Lead the preschool's educational team, fostering a positive and inclusive
+          learning
+          environment, and encouraging professional growth among staff.</p>
+        <br>
+        <h3>Preschool Teacher - Malmö Municipality</h3>
+        <p>March 1, 2016 - February 15, 2018</p>
+        <p>Responsibilities:</p>
+        <p>Leading pedagogical activities for children aged 3-6 years.</p>
+        <p>Curriculum Implementation: Plan and conduct age-appropriate educational activities following the Swedish
+          preschool curriculum to foster children's holistic development.</p>
+        <p>Child Development Assessment: Observe and assess children's progress to tailor learning approaches,
+          collaborating with parents and colleagues for individual development plans.</p>
+        <p>Educational Leadership: Lead the preschool's educational team, fostering a positive and inclusive
+          learning
+          environment, and encouraging professional growth among staff.</p>
+        <br>
+        <h3>Care Assistant</h3>
+        <p>April 11, 2011 - June 15, 2012</p>
+        <p>Responsibilities:</p>
+        <p>Personalized Care: Provide compassionate assistance with daily living tasks, respecting clients'
+          individual
+          needs and preferences.</p>
+        <p>Medication Management: Administer medications as prescribed, ensuring proper documentation and
+          communication
+          with healthcare providers.</p>
+        <p>Emotional Support and Companionship: Offer companionship and emotional support, engaging in meaningful
+          activities to enhance mental well-being.</p>
+      </div>
+
+      <div class="card mb-3 p-2" id="education">
+        <h2 class="card-header">Education</h2>
+        <h3>Diploma in Fullstack Software Development</h3>
+        <p>Code Institute, Dublin, Ireland (Remote)</p>
+        <p>December 2022 - Present</p>
+        <br>
+        <h3>Bachelor of Pedagogics with a Specialization in Special Needs</h3>
+        <p>University of Campus Kolding, Denmark</p>
+        <p>September 2012 - March 2016</p>
+      </div>
+
+      <div class="card" id="additional-information">
+        <h2 class="card-header">Additional Information</h2>
+        <ul>
+          <li>I am currently working on building my portfolio website.</li>
+          <li>I have a driver’s license.</li>
+          <li>I help out with audio/visuals at church.</li>
+          <li>I am fluent in English, Danish, and Swedish.</li>
+        </ul>
+      </div>
+
     </div>
-      </nav>
 
-      <div id="card-container" class="container column col-10 justify-content-center mx-auto">
-   <div class="card mb-3" id="executive-summary">
-          <h2 class="card-header">Executive Summary</h2>
-          <p>Dedicated and highly motivated Junior Full stack Developer. <br><br>From postgraduate in Pedagogics,<br> with a passion for IT and a strong desire to transition into a software development
-            career.
-            <br><br>Seeking a challenging position as a Full Stack Developer where I can leverage my educational
-            background,
-            teamwork skills, and problem-solving abilities to deliver innovative solutions to customers.
-          </p>
-
-        </div>
-        <div class="card mb-3" id="technical-skillset">
-          <h2 class="card-header">Technical Skillset</h2>
-          <h3>Technologies</h3>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>Javascript</p>
-          <p>Python</p>
-          <br>
-          <h3>Frameworks</h3>
-          <p>Bootstrap</p>
-          <br>
-          <h3>Version Control</h3>
-          <p>Git</p>
-          <p>Github</p>
-        </div>
-
-        <div class="card mb-3" id="portfolio-projects">
-          <h2 class="card-header">Portfolio Projects</h2>
-          <h3>Mindful-Zensations</h3>
-          <p>Educational website about meditation with a focus on accessibility in color scheme, font, and structure.
-          </p>
-          <p>Technologies used to build: HTML, CSS</p>
-          <a href="https://github.com/hypergeek-dev/Mindful-Zensations/" target="_blank">Link to Github</a>
-          <br>
-          <h3>Speakers Timer</h3>
-          <p>This app is a timer designed to help speakers manage their time during virtual meetings.</p>
-          <p>Technologies used to build: HTML, CSS, JavaScript.</p>
-          <a href="https://github.com/hypergeek-dev/Speakers-timer/" target="_blank">Link to Github</a>
-          <br>
-
-          <h3>Cipher Forge</h3>
-          <p>A password generator.</p>
-          <p>Technologies used to build: Python</p>
-          <a href="https://github.com/hypergeek-dev/cipher-forge/" target="_blank">Link to Github</a>
-        </div>
-
-        <div class="card mb-3" id="collaborative-projects">
-          <h2 class="card-header">Collaborative Projects</h2>
-          <h3>Hackathon - December Edition - 2022</h3>
-          <p>Jingle Bingle. Christmas card generator. This project has been awarded 1st place.</p>
-          <p>Technologies used to build: HTML, CSS, JS.</p>
-          <a href="https://github.com/hypergeek-dev/DynastyOne/" target="_blank">Link to Github</a>
-          <br>
-          <h3>Hackathon - The Leafblowers</h3>
-          <p>A presentation of an NGO that strives to prevent the results of deforestation.</p>
-          <p>Technologies used to build: HTML, CSS, JS.</p>
-          <a href="https://github.com/hypergeek-dev/The-Woke-Implementation-Association/" target="_blank">Link to
-            Github</a>
-        </div>
-
-        <div class="card mb-3" id="professional-experience">
-          <h2 class="card-header">Professional Experience</h2>
-          <h3>Preschool Teacher - Asmundtorp Preschool</h3>
-          <p>October 31, 2019 - September 1, 2022</p>
-          <p>Responsibilities:</p>
-          <p>Curriculum Implementation: Plan and conduct age-appropriate educational activities following the Swedish
-            preschool curriculum to foster children's holistic development.</p>
-          <p>Child Development Assessment: Observe and assess children's progress to tailor learning approaches,
-            collaborating with parents and colleagues for individual development plans.</p>
-          <p>Educational Leadership: Lead the preschool's educational team, fostering a positive and inclusive
-            learning
-            environment, and encouraging professional growth among staff.</p>
-          <br>
-          <h3>Preschool Teacher - Landskrona Municipality</h3>
-          <p>February 18, 2018 - October 31, 2019</p>
-          <p>Responsibilities:</p>
-          <p>Curriculum Implementation: Plan and conduct age-appropriate educational activities following the Swedish
-            preschool curriculum to foster children's holistic development.</p>
-          <p>Child Development Assessment: Observe and assess children's progress to tailor learning approaches,
-            collaborating with parents and colleagues for individual development plans.</p>
-          <p>Educational Leadership: Lead the preschool's educational team, fostering a positive and inclusive
-            learning
-            environment, and encouraging professional growth among staff.</p>
-          <br>
-          <h3>Preschool Teacher - Malmö Municipality</h3>
-          <p>March 1, 2016 - February 15, 2018</p>
-          <p>Responsibilities:</p>
-          <p>Leading pedagogical activities for children aged 3-6 years.</p>
-          <p>Curriculum Implementation: Plan and conduct age-appropriate educational activities following the Swedish
-            preschool curriculum to foster children's holistic development.</p>
-          <p>Child Development Assessment: Observe and assess children's progress to tailor learning approaches,
-            collaborating with parents and colleagues for individual development plans.</p>
-          <p>Educational Leadership: Lead the preschool's educational team, fostering a positive and inclusive
-            learning
-            environment, and encouraging professional growth among staff.</p>
-          <br>
-          <h3>Care Assistant</h3>
-          <p>April 11, 2011 - June 15, 2012</p>
-          <p>Responsibilities:</p>
-          <p>Personalized Care: Provide compassionate assistance with daily living tasks, respecting clients'
-            individual
-            needs and preferences.</p>
-          <p>Medication Management: Administer medications as prescribed, ensuring proper documentation and
-            communication
-            with healthcare providers.</p>
-          <p>Emotional Support and Companionship: Offer companionship and emotional support, engaging in meaningful
-            activities to enhance mental well-being.</p>
-        </div>
-
-        <div class="card mb-3" id="education">
-          <h2 class="card-header">Education</h2>
-          <h3>Diploma in Fullstack Software Development</h3>
-          <p>Code Institute, Dublin, Ireland (Remote)</p>
-          <p>December 2022 - Present</p>
-          <br>
-          <h3>Bachelor of Pedagogics with a Specialization in Special Needs</h3>
-          <p>University of Campus Kolding, Denmark</p>
-          <p>September 2012 - March 2016</p>
-        </div>
-
-        <div class="card" id="additional-information">
-          <h2 class="card-header">Additional Information/Interests</h2>
-          <ul>
-            <li>I am currently working on building my portfolio website.</li>
-            <li>I have a driver’s license.</li>
-            <li>I am a passionate cook.</li>
-            <li>I help out with audio/visuals at church.</li>
-            <li>I am fluent in English, Danish, and Swedish.</li>
-            <li>I speak some German and Portuguese.</li>
-            <li>I've been traveling most of the world.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      </div>
-    </section>
+    </div>
+  </section>
 
   </div>
 
@@ -269,7 +297,7 @@
       const cardContainer = document.getElementById("card-container");
       const alignmentChanger = document.getElementById("align_changer");
 
-      if (window.innerWidth <= 992) {
+      if (window.innerWidth < 992) {
         alignmentChanger.classList.remove("hstack", "align-items-start");
         alignmentChanger.classList.add("vstack");
 
